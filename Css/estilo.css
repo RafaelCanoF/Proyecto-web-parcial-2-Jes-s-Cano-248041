@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+main {
+    max-width: 1666px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+
+a:hover {
+    transition: 250ms;
+    background-color: #ffffff;
+    color: #279B48;
+}
+
+h2 {
+    color: #279B48;
+    font-family: "Inter", serif;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.banner2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    animation: bannerSlideIn 1.5s ease-out forwards;
+}
+
+hr {
+    height: 3px;
+    background-color: #279B48;
+    border: none;
+    width: 0;
+    animation: expandBar 1.2s ease-out forwards;
+}
+
+
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    padding-left: 30px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end; /* Ajuste del nombre de la propiedad */
+    padding-right: 30px;
+}
+
+li {
+    font-size: 22px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 42px;
+    width: 233px;
+    margin: 6px;
+    padding: 6px;
+    border-color: #279B48;
+    border-radius: 50px;
+    background-color: #279B48;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.288);
+}
+
+li:hover {
+    transition: 250ms;
+    background-color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    height: 347px;
+    background-image: url('../IMG/Banner.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 1666px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.Desarrollos_sostenible, .Salud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 33px;
+}
+
+
+.foto img, .foto2 img {
+    height: 300px;
+    width: 300px;
+}
+
+.foto, .foto2 {
+    width: 400px;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+.info, .info2 {
+    width: 1000px;
+    height: 200px;
+    float: right;
+    margin: 0 30px 150px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.info h2, .info2 h2 {
+    color: #279B48;
+    font-family: "Inter", serif;
+    font-size: 35px;
+}
+
+.info p, .info2 p {
+    font-weight: 200;
+    color: #000;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Inicialmente invisibles */
+}
+
+.info p:nth-child(1), .info2 p:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.info p:nth-child(2), .info2 p:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.info p:nth-child(3), .info2 p:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+table {
+    table-layout: fixed;
+    width: 1500px;
+    border-collapse: collapse;
+    border: 3px solid #279B48;
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #279B48;
+    animation: tableSlideIn 1s ease-out forwards;
+}
+  
+thead th:nth-child(1) {
+    width: 30%;
+}
+  
+thead th:nth-child(2) {
+    width: 20%;
+}
+  
+thead th:nth-child(3) {
+    width: 15%;
+}
+  
+thead th:nth-child(4) {
+    width: 35%;
+}
+  
+th,td {
+    padding: 20px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+  
+td {
+    letter-spacing: 1px;
+}
+  
+tbody td {
+    text-align: center;
+}
+  
+tfoot th {
+    text-align: right;
+}
+thead,tfoot {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+  
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)
+    );
+    border: 3px solid #063914;
+}
+  
+tbody tr:nth-child(odd) {
+    background-color: #88f9a8;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #64b77b;
+}
+  
+
+/* Formulario */
+form, .form-slider-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;  /* Limitar el tamaño máximo */
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.form-box {
+    flex: 0 1 48%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 700px; /* Asegura que no sobrepasen los límites */
+    margin: 0 auto;
+    animation: formSlideIn 1.5s ease-out forwards;
+}
+
+.form-content {
+    padding: 40px;
+}
+
+.form-description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.formulario-estilo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulario-estilo label {
+    font-weight: 600;
+    color: #333;
+}
+
+.formulario-estilo input, .formulario-estilo select, .formulario-estilo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fdfdfd;
+}
+
+.formulario-estilo button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-estilo button:hover {
+    background-color: #3e8e41;
+}
+.barra-lateral {
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4CAF50, #81C784);
+}
+
+.slider-container {
+    flex: 0 1 48%;
+    min-width: 300px;
+    animation: sliderMove 2s ease-out forwards;
+}
+
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Otras configuraciones para el slider */
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 365px;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 1;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-control {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.slide-control:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.slide-control.prev {
+    left: 10px;
+}
+
+.slide-control.next {
+    right: 10px;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: #279B48;
+    color: white;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer .footer-section-info {
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+}
+
+footer .footer-section-info hr {
+    background-color: #ffffff;
+}
+
+footer .footer-section-info h2 {
+    font-size: 50px;
+}
+
+footer .footerlinks {
+    margin-top: 10%;
+}
+
+footer .footerlinks a {
+    font-family: "Domine", serif;
+    margin-right: 140px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .footerlinks a:hover {
+    color: #81C784; /* Verde claro */
+}
+
+footer .footer-section-maps {
+    margin-right: 100px;
+    margin-top: 50px;
+    float: right;
+    text-align: center;
+}
+
+footer .footer-section-maps img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+.footer-section-maps p {
+    margin-top: 35%;
+}
+
+
+
+/* ANIMACIONES */
+/* Animación para el logo */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación para los ítems del menú */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplicación de animación al logo */
+nav img {
+    padding-left: 30px;
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Animación para los elementos de la lista */
+nav ul li {
+    opacity: 0; /* Para que no se vean antes de animarse */
+    animation: slideInRight 0.8s ease-out forwards;
+    animation-delay: 0.4s; /* Espera un poquito después del logo */
+}
+
+/* Si querés que cada botón aparezca con un pequeño retraso uno tras otro */
+nav ul li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+nav ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.foto {
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.foto2 {
+    animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes expandBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.info p, .info2 p {
+    animation: fadeIn 1.2s ease-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tableSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Se mueve desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Se desplaza a su posición final */
+    }
+}
+
+@keyframes bannerSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* Empuja desde la izquierda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición original */
+    }
+}
+
+@keyframes formSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación del slider */
+@keyframes sliderMove {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+footer .footerlinks a {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: footerLinksFadeIn 1s ease-out forwards;
+    animation-delay: 0.3s; /* Añadimos un pequeño retraso */
+}
+
+footer .footerlinks a:nth-child(2) {
+    animation-delay: 0.6s; /* Retraso para el segundo enlace */
+}
+
+footer .footerlinks a:nth-child(3) {
+    animation-delay: 0.9s; /* Retraso para el tercer enlace */
+}
+
+footer .footerlinks a:nth-child(4) {
+    animation-delay: 1.2s; /* Retraso para el tercer enlace */
+}
+/* Animación de la imagen del mapa */
+footer .footer-section-maps img {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: footerMapFadeIn 1s ease-out forwards;
+    animation-delay: 1.2s; /* Retraso para la imagen del mapa */
+}
+
+/* Animación del título del footer (desde abajo) */
+@keyframes footerTitleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de los enlaces del footer (deslizar desde la derecha) */
+@keyframes footerLinksFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación de la imagen del mapa (desvanecimiento y desplazamiento hacia arriba) */
+@keyframes footerMapFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: footerParagraphFadeIn 1s ease-out forwards;
+}
+
+/* Añadir un pequeño retraso para que los <p> se animen uno tras otro */
+footer p:nth-child(1) {
+    animation-delay: 1.5s; /* Retraso para el primer párrafo */
+}
+
+footer p:nth-child(2) {
+    animation-delay: 1.8s; /* Retraso para el segundo párrafo */
+}
+
+footer p:nth-child(3) {
+    animation-delay: 2.1s; /* Retraso para el tercer párrafo */
+}
+
+/* Animación de desvanecimiento y desplazamiento hacia arriba */
+@keyframes footerParagraphFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
